@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJ Blogs</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script1.js"></script>
+    <link rel="icon" href="https://media-exp1.licdn.com/dms/image/C5603AQEDS-0nBs5ZCA/profile-displayphoto-shrink_400_400/0/1622722211083?e=1637193600&v=beta&t=5m7hD6Vum9JqQ4xSqHPWwvYJnRpgQ3y9_xnyTFR-BUg" type="image/gif" sizes="16x16">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+    <header class="dashboard">
+        <div class="row p-2" style="color: #8a8796;">
+            <div class="col-md-6 col-9">
+                <h2 align-left style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">AJ Blogs</h2>
+            </div>    
+            <div class="col-md-6 col-3 my-auto">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-end"  id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#home-section">Home <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#service-section">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#blog-section">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#contact-section">Contact</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                  </form>
+                </div>
+              </nav>
+            </div>
+        </div>
+    </header>
+
+<section id="home-section" style="padding-top: 5em;">
+    <div class="container">
+        <div class="row align-items-center" >
+          <div class="col-md-6 ">
+            <img src="https://lh4.googleusercontent.com/JuEQYStTEazRv18t6daDDrdmpSOX8G3gflWrcYgsSOJ0-rjlfi_rxTTUv3RzNi1q_-gjqgGYR8PRnm1RwDE3sxo0Y0kczhDlwDYh7UvVADr3jYgrl-tLy_IMYYpVySxPCY78zUxN" alt="" class="img-fluid rounded-circle">
+        </div>
+
+            <div class="col-md-6">
+                <h4 class="pt-4" style="font-family: 'papyrus';">Ayisha Jumaila<br>WiC coordinator, IEEE CS MEA SBC <br> Content Writer, TBT <br> CSE student at MEA Engineering College</h4><br><br>
+                <p class="mr-3" style="font-family:franklin gothic medium; font-size: large;">“When we love, we always strive to become better than we are. When we strive to become better than we are, everything around us becomes better too.”
+                   <br> ― Paulo Coelho, The Alchemist</p>
+            </div>
+            <div class="clock">
+              Time is running, would you run along or leave it be?! 
+              <div id="txt"></div>
+              </div>
+<body onload="startTime()" >
+<script class="time">
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  
+  return i;
+}
+</script>
+</body>
+            </div>
+            
+        
+    </div>
+</section>
+<section class="p-3" id="service-section">
+    <div class="container">
+        <h2 class="text-center text-white" >Services</h2>
+        <div class="row mt-3" >
+            
+          <div class="col-md-4 pt-3">
+                <div class="card text-center p-3 bg-secondary">
+                    <i class="fas fa-newspaper display-1" style="color:#1c1147;"></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Resume Writing</h5>
+                      <p class="card-text">Resume writing for professionals in any field in a way that is both crisp and impressive.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 pt-3">
+                <div class="card text-center p-3 bg-secondary">
+                  <i class="fas fa-newspaper display-1 " style="color: #1c1147;"></i>
+                  <div class="card-body">
+                    <h5 class="card-title">Content Writing</h5>
+                    <p class="card-text">Creating attractive content for event, flyers, posters, functions, etc. and customizing them.</p>
+                  </div>
+                </div>
+              </div>
+             
+              <div class="col-md-4 pt-3">
+                <div class="card text-center p-3 bg-secondary">
+                  <i class="fas fa-newspaper display-1" style="color: #1c1147;"></i>
+                  <div class="card-body">
+                    <h5 class="card-title">Caption Writing</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+            
+        <div class="row mt-3 " >
+                <div class="col-md-4 pt-3">
+                  <div class="card text-center p-3 bg-secondary" >
+                    <i class="fas fa-newspaper display-1 " style="color:#1c1147;"></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Essay Writing</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-4 pt-3">
+                  <div class="card text-center p-3 bg-secondary" >
+                    <i class="fas fa-newspaper display-1" style="color:#1c1147;"></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Blog Writing</h5>
+                      <p class="card-text">Creating unscripted highly creative blogs for clients in any field.fkdkfl fmladfadk fadfmlvfdak fadlkf</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-4 pt-3">
+                  <div class="card text-center p-3 bg-secondary"  >
+                    <i class="fas fa-newspaper display-1" style="color:#1c1147;"></i>
+                    <div class="card-body">
+                      <h5 class="card-title">Classical Writing</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                </div>
+            </div> 
+    </div>
+    <br>
+</section>
+<section class="pt-3" id="blog-section" style="background-color: #2e2d31;">
+    <div class="container">
+        <h2 class="text-center" style="color: rgb(255, 255, 255);" >Blogs</h2>
+        <div class="row mt-3 pt-4" >
+            <div class="col-md-4 pt-3">
+                <a href="https://www.linkedin.com/pulse/%E0%B4%B8%E0%B4%AE%E0%B4%AF-%E0%B4%8E%E0%B4%A8%E0%B4%95%E0%B4%B0%E0%B4%AE-%E0%B4%87%E0%B4%B0%E0%B4%A3%E0%B4%9F-%E0%B4%AD%E0%B4%96%E0%B4%A3%E0%B4%A1%E0%B4%A4%E0%B4%A4%E0%B4%B2-%E0%B4%B5%E0%B4%B3%E0%B4%B3%E0%B4%B5%E0%B4%B3%E0%B4%9A%E0%B4%9A-ayisha-jumaila/" style="text-decoration: none; color: rgb(255, 255, 255);">
+                <div class="card text-center p-3" style="background-color: rgb(65, 66, 66);">
+                    <img src="https://media-exp1.licdn.com/dms/image/C5612AQHtvOR7xSVO3w/article-cover_image-shrink_720_1280/0/1610775477026?e=1637193600&v=beta&t=W0fuZpalPjl_uYupJd2zhMmE4BPhw4CiDH-SjBW96ow" card-img-top style="height: 11em;" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">IN Article</h5>
+                      <p class="card-text">Article on Samiya Nkrumah</p>
+                    </div>
+                </div>
+            </a>
+            </div>
+            <div class="col-md-4 pt-3">
+                <a href="https://www.linkedin.com/pulse/story-weird-lady-ayisha-jumaila/" style="text-decoration: none; color: rgb(255, 255, 255);">
+                <div class="card text-center p-3" style="background-color: rgb(65, 66, 66); ">
+                  <img src="https://media-exp1.licdn.com/dms/image/C5612AQGCYJoRTara9Q/article-cover_image-shrink_720_1280/0/1610799500133?e=1637193600&v=beta&t=z0EuRDH9T9MZ2jhe2LhRYbRunmeLVtlOjwn1Di5-nUw" card-img-top style="height: 11em;" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Poem</h5>
+                    <p class="card-text">The Story of a Weird Lady</p>
+                  </div>
+                </div>
+                </a>
+              </div>
+              <div class="col-md-4 pt-3">
+                <a href="https://www.linkedin.com/pulse/chubby-cheeks-ayisha-jumaila/" style="text-decoration: none; color: rgb(255, 255, 255);">
+                <div class="card text-center p-3" style=" background-color: rgb(65, 66, 66);">
+                  <img src="https://media-exp1.licdn.com/dms/image/C5612AQHYPTNKyF_P7Q/article-cover_image-shrink_720_1280/0/1610799277258?e=1637193600&v=beta&t=-czL57V6aG6v-Qnprt8HcTyIqsCwKLnDcF_tQMEuKIo" card-img-top style="height: 11em;" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Children's Poem</h5>
+                    <p class="card-text">Chubby Cheeks</p>
+                  </div>
+                </div>
+                </a>
+              </div>
+        </div>
+            <div class="row mt-2 " >
+                <div class="col-md-4 pt-3">
+                    <a href="https://www.linkedin.com/pulse/young-entrepreneurship-modern-views-ayisha-jumaila/" style="text-decoration: none; color: rgb(255, 255, 255);">
+                  <div class="card text-center p-3" style=" background-color: rgb(65, 66, 66);">
+                    <img src="https://media-exp1.licdn.com/dms/image/C5612AQF-MK8Lg3T4fQ/article-cover_image-shrink_423_752/0/1610799714708?e=1637193600&v=beta&t=vrcPo76g9gmCJfJk-3BFAzVcKGUTIYLcLOCPm3kUs5Q" card-img-top style="height: 11em;" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Business Article</h5>
+                      <p class="card-text">Young Entrepreneurship: Modern Views</p>
+                    </div>
+                  </div>
+                </a>
+                </div>
+                <div class="col-md-4 pt-3">
+                <a href="https://www.linkedin.com/pulse/self-love-common-misunderstanding-formulae-ayisha-jumaila/" style="text-decoration: none; color: rgb(255, 255, 255);">
+                  <div class="card text-center p-3" style=" background-color: rgb(65, 66, 66);">
+                    <img src="https://media-exp1.licdn.com/dms/image/C5612AQGIv8Dd6Vkf2Q/article-cover_image-shrink_720_1280/0/1610799768450?e=1637193600&v=beta&t=0RvMN0Xg11RxWZ7EmOxQOGnrQvKkhkoAlHalQW084C8" card-img-top style="height: 11em;" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Motivational Writing</h5>
+                      <p class="card-text">Self Love: Epic formulae</p>
+                    </div>
+                  </div>
+                </a>
+                </div>
+                <div class="col-md-4 pt-3">
+                    <a href="https://www.linkedin.com/posts/ayisha-jumaila-1302b0201_googlecloudready-devops-cloudinfrastructure-activity-6808000419021893633-5UAr" style="text-decoration: none; color: rgb(255, 255, 255);">
+                    <div class="card text-center p-3" style=" background-color: rgb(65, 66, 66);">
+                    <img src="https://media-exp1.licdn.com/dms/image/C5622AQHFh4sekALd-A/feedshare-shrink_800/0/1623153785153?e=1634169600&v=beta&t=3DEPHxDTmsbvtHfSAhjVd-kISVm4xrPsNFX_UCUr6uE" card-img-top style="height: 11em;" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Gratitude Note</h5>
+                      <p class="card-text">VOte of thanks for Google Cloud</p>
+                    </div>
+                  </div>
+                    </a>
+                </div>
+            </div> 
+    </div>
+    <br><br>
+</section>
+<section class="p-4" style="background-color: #8a8796;" id="contact-section">
+    <div class="container">
+        <div class="row align-items-center" >
+            <h2 class="text-center text-dark";" >Contact me</h2>
+            <div class="col-md-6 ">
+                <img src="https://cdn.shopify.com/s/files/1/0433/1307/0248/files/undraw_respond_8wjt_480x480.png?v=1601026818" alt="" class="img-fluid rounded-circle">
+            </div>
+
+            <div class="col-md-6">
+              <div id="error"></div>
+                <form id="form" class="p-5">
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="name">Full Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Type your full name here..." required >
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="mail" class="mt-3">Mail id</label>
+                        <input type="mail" class="form-control" id="mail" placeholder="Mail ID goes here..." required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="message" class="mt-3">Message</label>
+                      <textarea class="form-control" id="message" cols="30" rows="7" placeholder="Type your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-dark mt-2" style="width: 100%;">Submit</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-12 text-center">
+
+            <a href="https://www.linkedin.com/in/ayisha-jumaila-1302b0201/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/leaky.cauldron.568"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://twitter.com/AyishaJTP"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://github.com/ayisha-jumaila"><i class="fab fa-github-square"></i></a>
+            <a href="https://www.hackerrank.com/ayishajumailatp"><i class="fab fa-hackerrank"></i></a>
+            
+            
+        
+            <p><i class="fa fa-copyright" aria-hidden="true" style="color: rgb(255, 255, 255);">All rights reserved. Website made by Ayisha Jumaila</i></p>
+        </div>
+         </div>
+    </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/dbada7f2e2.js" crossorigin="anonymous"></script>
+</body>
+</html>
